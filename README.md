@@ -1,4 +1,4 @@
-# HRV usando la Transformada Wavelet
+# HRV Usando la Transformada Wavelet
 ## Fundamentos Teóricos
 ### Actividad Simpática y Parasimpática del Sistema Nervioso Autónomo 
 **SNA Simpático** 
