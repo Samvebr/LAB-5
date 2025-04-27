@@ -224,27 +224,75 @@ def calcular_hrv(rr_intervals):
 - Media R-R: 0.8755 s
 - Desviación estándar R-R: 0.0860 s
 - En el primer minuto el sujeto esta en reposo y tiene una frecuencia cardiaca aproximada de 70 bpm, concordando la media de los latidos (Más o menos un latido cada segundo).
+  
 #### Minuto 2:
 
 ![Image](https://github.com/user-attachments/assets/6212df41-9c71-428d-b1f9-c656c09f7d0e)
 
 - Media R-R: 0.8397 s
 - Desviación estándar R-R: 0.0658 s
-- 
+- En la mitad de este segundo instante el paciente se somete a apnea durante 60 segundos con el fin de que se evidencie un proceso parasimpatico y disminuya su frecuencia cardiaca.
+  
 #### Minuto 3:
 
 ![Image](https://github.com/user-attachments/assets/e613f1c5-830f-42bf-b201-c23d167fac31)}
 
 - Media R-R: 0.8438 s
 - Desviación estándar R-R: 0.0642 s
-
+- La apnea anteriormente mencionada genero una bajada en el ritmo cardiaco, esto puede ser observado en la grafica relacionada en los intervalos R-R donde se ve como la frecuencia a los largo del tiempo tiende a tener valor entre 60-70 bpm.
+  
 #### Minuto 4:
 
 ![Image](https://github.com/user-attachments/assets/d91e317a-8f2a-4c39-96d1-8b8bb49cdcfa)
 
 - Media R-R: 0.9051 s
 - Desviación estándar R-R: 0.1282 s
+- Finalmente en el ultimo instante la la frecuencia en un primer instante de 10 segundos es bastante mas veloz que en los siguientes 50 segunods, esto debido a la compensación que genera el corazon al volver a respirar y regular todas las actvidades fisiologicas.
 
-### Aplicación transformada Wavelet
+### Aplicación transformada Wavelet a la señal
 
+#### Codigo e implementación
+
+``` bash
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.signal import butter, lfilter, find_peaks
+import pywt
+```
+- Importamos las mismas librerias que se utilizan para el analísis del HRV, a excepción de utilizamos ahora la libreria que se encarga del uso de la transformada Wavelet continua.
+
+``` bash
+def aplicar_wavelet(signal, fs, segmento_id):
+    wavelet = 'cmor1.5-1.0'  # Complex Morlet
+    total_time = len(signal) / fs
+    time = np.linspace(0, total_time, len(signal))
+```
+- Primero se crea una función que se encarga de aplicar la transformada con tres parametros, fs, signal y segmento_id), acá asignamos los parametros como el tiempo total de la señal que se analiza, variamos un valor Morlet a la variable Wavelet esta en función de como vamos a ver percibir la grafica.
+
+``` bash
+    # Escalas relacionadas con frecuencia
+    freqs = np.linspace(0.04, 0.4, num=100)  # HRV bands
+    scales = pywt.central_frequency(wavelet) * fs / freqs
+    coef, freqs = pywt.cwt(signal, scales, wavelet, sampling_period=1/fs)
+    power = np.abs(coef) ** 2
+```
+- En este cuadro definimos variables como la frecuencia, la escala, coeficientes la frecuencia, y el calculo para obtener la potencia espectral.
+
+### Graficas y analísis Wavelet
+#### Espectro 1:
+
+![Image](https://github.com/user-attachments/assets/18092cf0-5f35-40c2-bff3-ab50bb9d6872)
+
+#### Espectro 2:
+
+![Image](https://github.com/user-attachments/assets/a38f2f63-24db-4537-8205-259a4231551c)
+
+#### Espectro 3:
+
+![Image](https://github.com/user-attachments/assets/bdd4e09e-18c9-48c4-9790-56959e876d38)
+
+#### Espectro 4:
+
+![Image](https://github.com/user-attachments/assets/1416cbd3-9ae4-40cc-8153-60cfc960db6b)
 
