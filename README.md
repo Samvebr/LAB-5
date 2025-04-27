@@ -31,6 +31,8 @@ Algunos usos y tipos de Wavelet utilizados en señales biologicas son:
 
 ### Diagrama de flujo
 - Mediante este se mostrara el plan de acción y su paso a paso con el fin de obtener un experimento con la organización y rigurosidad necesaria.
+  
+![Image](https://github.com/user-attachments/assets/e6d49e42-c604-4486-b6ab-e33da73f28fe)
 
 ### Adquisición de la Señal ECG
 Para la adquisición de la señal se tomo al sujeto de prueba, posteriormente se le colaron los electrodos y mediante comunicacion serial se obtubieron los datos de la frecuencia cardiaca del sujeto en reposo y en actividad durante 5 minutos, que posteriormente son exportados y guardados en un archivo *csv*. Los datos se obtuvieron con Matlab.
@@ -146,3 +148,75 @@ end
 **Interfaz Grafica de Matlab**
 
 ![Imagen de WhatsApp 2025-04-23 a las 11 46 14_ecec06fc](https://github.com/user-attachments/assets/3db827cc-d956-403a-881d-43fa9e491a58)
+
+### Diseño e implementación filtro IIR
+- Lo que haga Salo
+### Analísis del HRV
+- El HRV de cada individuo es diferente y este depende a condiciones de edad y de salud, el caso de analísis es sobre Samuel Velandia, joven deportista de 20 años.
+#### Procesamiento de la señal
+- El codigo con el cual se analizara el paciente esta construido de la siguiente forma:
+ ``` bash
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.signal import butter, lfilter, find_peaks
+```
+- Estas librerias son necesarias para la lectura operación matematica y graficación de los datos adquiridos y su filtrado.
+
+-Se declaran 5 funciones escenciales
+
+``` bash
+def aplicar_filtro(data, b, a):
+    return lfilter(b, a, data)
+```
+- Aplicación del filtro a la señal.
+
+``` bash
+def detectar_picos_R(signal, fs):
+    peaks, _ = find_peaks(signal, distance=fs*0.6, height=np.mean(signal))
+    rr_intervals = np.diff(peaks) / fs
+    return peaks, rr_intervals
+```
+-  Detección de los picos correspondientes al intervalo R-R, esto basado en los valores medios de la señal
+
+``` bash
+# 4. Generar nueva señal basada en RR intervalos
+def señal_rr(rr_intervals, fs):
+    freq_hr = 60 / rr_intervals
+    rr_signal = np.zeros(int(np.sum(rr_intervals) * fs))
+    pos = 0
+    for interval, bpm in zip(rr_intervals, freq_hr):
+        rr_signal[int(pos):int(pos + interval * fs)] = bpm
+        pos += interval * fs
+    return rr_signal
+```
+- Generamos una señal basada en los intervalos R-R, tomando los picos en base a su frecuencia.
+- 
+``` bash 
+def calcular_hrv(rr_intervals):
+    if len(rr_intervals) == 0:
+        return None, None
+    media_rr = np.mean(rr_intervals)
+    std_rr = np.std(rr_intervals)
+    return media_rr, std_rr
+```
+- Finalmente tomamos los intervalos y calculamos su media en el dominio del tiempo
+
+#### Calculo estadistico
+- Utilizamos las funciones para calcular la desviación estandar y la media del siguiente modo:
+  ``` bash
+        media_rr, std_rr = calcular_hrv(rr_intervals)
+
+        # Imprimir resultados de HRV
+        print(f"Segmento {i+1} (minuto {i+1}):")
+        if media_rr is not None:
+            print(f"  - Media R-R: {media_rr:.4f} s")
+            print(f"  - Desviación estándar R-R: {std_rr:.4f} s\n")
+        else:
+            print("  - No se detectaron suficientes picos R.\n")
+
+  ```
+### Graficas y analísis de datos
+#### Minuto 1:
+
+### Aplicación transformada Wavelet
