@@ -219,4 +219,32 @@ def calcular_hrv(rr_intervals):
 ### Graficas y analísis de datos
 #### Minuto 1:
 
+![Image](https://github.com/user-attachments/assets/9abd625e-e866-43be-b56b-a8bbc511e6dc)
+
+- Media R-R: 0.8755 s
+- Desviación estándar R-R: 0.0860 s
+- En el primer minuto el sujeto esta en reposo y tiene una frecuencia cardiaca aproximada de 70 bpm, concordando la media de los latidos (Más o menos un latido cada segundo).
+#### Minuto 2:
+
+![Image](https://github.com/user-attachments/assets/6212df41-9c71-428d-b1f9-c656c09f7d0e)
+
+- Media R-R: 0.8397 s
+- Desviación estándar R-R: 0.0658 s
+- 
+#### Minuto 3:
+
+![Image](https://github.com/user-attachments/assets/e613f1c5-830f-42bf-b201-c23d167fac31)}
+
+- Media R-R: 0.8438 s
+- Desviación estándar R-R: 0.0642 s
+
+#### Minuto 4:
+
+![Image](https://github.com/user-attachments/assets/d91e317a-8f2a-4c39-96d1-8b8bb49cdcfa)
+
+- Media R-R: 0.9051 s
+- Desviación estándar R-R: 0.1282 s
+
 ### Aplicación transformada Wavelet
+
+
