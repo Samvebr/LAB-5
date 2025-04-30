@@ -170,7 +170,7 @@ def diseño_filtro_IIR(fs, lowcut, highcut, order=4):
     return b, a
 ```
 
-- Primero diseñamos es filtro, teniendo en cuenta las frecuencias de corte y el orden, este ultimo esta dado por la eficiencia con la que se va a filtrar la señal, tambien se configuran las frecuencias de muestreo por el teorema de Nyquist.
+- Primero diseñamos el filtro, teniendo en cuenta las frecuencias de corte y el orden, este ultimo esta dado por la eficiencia con la que se va a filtrar la señal, tambien se configuran las frecuencias de muestreo por el teorema de Nyquist.
 
 ``` bash
 
