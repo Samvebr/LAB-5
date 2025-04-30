@@ -28,7 +28,7 @@ Algunos usos y tipos de Wavelet utilizados en señales biologicas son:
 - **Electroencefalogramas (EEG)**: Con el fin de detectar picos epilépticos y análisis de fases del sueño. Se emplean los *Coiflets(coif)*; que poseen alta simetria y mayor cantidad de momentos nulos, lo que permite la multiresolución y *Morlet*; de manera sinusoidal modula la frecuencia.
 - **Fonocardiogramas(PCG)**: Identificación de ruidos cardiacos anormales y soplos. Los tipos de Wavelet empleados para el analisis de esta señal biológica son *Symlets(sym)*; buena locaclización en tiempo y frecuencia con mayor  simetria y *Biorthigonal*; empleada en reconstruccion y simetria, ayuda en la compresión de imágenes médicas.
 
-##Procedimientos
+###Procedimientos
 
 ### Diagrama de flujo
 - Mediante este se mostrara el plan de acción y su paso a paso con el fin de obtener un experimento con la organización y rigurosidad necesaria.
