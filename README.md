@@ -150,7 +150,7 @@ end
 
 ### Diseño e implementación filtro IIR
 
-- Un filtro IIR (Infinite Impulse Response) es un filtro digital que funciona en base a los valores presentes de la señal y sus valores pasados, muy utilizados por su alta eficiencia y su uso cuando contamos con recursos limitados (embebidos).
+Un filtro IIR (Infinite Impulse Response) es un filtro digital que funciona en base a los valores presentes de la señal y sus valores pasados, muy utilizados por su alta eficiencia y su uso cuando contamos con recursos limitados (embebidos).
 
 #### Codigo del filtro
 ``` bash
