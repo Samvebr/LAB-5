@@ -150,7 +150,37 @@ end
 ![Imagen de WhatsApp 2025-04-23 a las 11 46 14_ecec06fc](https://github.com/user-attachments/assets/3db827cc-d956-403a-881d-43fa9e491a58)
 
 ### Diseño e implementación filtro IIR
-- Lo que haga Salo
+
+-Un filtro IIR (Infinite Impulse Response) es un filtro digital que funciona en base a los valores presentes de la señal y sus valores pasados, muy utilizados por su alta eficiencia y su uso cuando contamos con recursos limitados (embebidos).
+
+#### Codigo del filtro
+``` bash
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from scipy.signal import butter, lfilter, find_peaks
+```
+- Las librerias escenciales para procesar la señal y la función de la libreria scipy que importa los filtros.
+``` bash
+
+def diseño_filtro_IIR(fs, lowcut, highcut, order=4):
+    nyq = 0.5 * fs
+    low = lowcut / nyq
+    high = highcut / nyq
+    b, a = butter(order, [low, high], btype='band')
+    return b, a
+```
+
+- Primero diseñamos es filtro, teniendo en cuenta las frecuencias de corte y el orden, este ultimo esta dado por la eficiencia con la que se va a filtrar la señal, tambien se configuran las frecuencias de muestreo por el teorema de Nyquist.
+
+``` bash
+
+def aplicar_filtro(data, b, a):
+    return lfilter(b, a, data)
+``` 
+- Aplicamos el filtro creando una función, esta tomara los datos guardados en la variable data y le aplicara los valores a y b del filtro, retornando la función filtrada
+
+
 ### Analísis del HRV
 - El HRV de cada individuo es diferente y este depende a condiciones de edad y de salud, el caso de analísis es sobre Samuel Velandia, joven deportista de 20 años.
 #### Procesamiento de la señal
