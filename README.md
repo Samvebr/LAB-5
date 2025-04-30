@@ -36,7 +36,7 @@ Algunos usos y tipos de Wavelet utilizados en señales biologicas son:
 ### Adquisición de la Señal ECG
 Para la adquisición de la señal se tomo al sujeto de prueba, posteriormente se le colaron los electrodos y mediante comunicacion serial se obtuvieron los datos de la frecuencia cardiaca del sujeto en reposo y en actividad durante 5 minutos, que posteriormente son exportados y guardados en un archivo *csv*. Los datos se obtuvieron mediante una interfaz en Matlab.
 
-Primero se cerraron los puertos eriales abiertos para evitar conflictos con aperturas posteriores, la instrucción *serialportfind* detecta los puertos abierto y con *delete* se cierran.
+-Primero se cerraron los puertos eriales abiertos para evitar conflictos con aperturas posteriores, la instrucción *serialportfind* detecta los puertos abierto y con *delete* se cierran.
 
 ``` bash
 clc;
@@ -51,7 +51,7 @@ if ~isempty(puertosAbiertos)
     end
 end
 ```
-Luego se configura el el puerto serial para establecer la conexion con la STM32, con *puerto* se especifica a donde esta conectado el dispositivo y con *baudRate* la velocidad de la comunicacion serial.
+-Luego se configura el el puerto serial para establecer la conexion con la STM32, con *puerto* se especifica a donde esta conectado el dispositivo y con *baudRate* la velocidad de la comunicacion serial.
 
 ``` bash
 %% Configuración del puerto serial
@@ -60,7 +60,7 @@ baudRate = 9600;
 s = serialport(puerto, baudRate);
 configureTerminator(s, "LF");
 ```
-Se configuran los parametros realacionados al ADC y la visualizacion, como lo es la resolucion, la frecuencia de muestreo, el intervalo de tiempo entre muestras y el numero de muestras. Tambien se inicializa el tiempo de ventana para graficar los vectores y almanecer los datos.
+-Se configuran los parametros realacionados al ADC y la visualizacion, como lo es la resolucion, la frecuencia de muestreo, el intervalo de tiempo entre muestras y el numero de muestras. Tambien se inicializa el tiempo de ventana para graficar los vectores y almanecer los datos.
 
 ``` bash
 voltaje_ref  = 5;        % Voltaje de referencia del ADC (V)
@@ -76,7 +76,7 @@ buffer        = zeros(1, num_muestras);
 dataLog = [];
 timeLog = [];
 ```
-Se crea la ventana grafica y la interfaz de usuario para poder observar la toma de la señal, además se configura un boton de *stop* para poder detener la toma de la señal de ser necesario, tambien se configuran los ejes y las leyendas del grafico.
+-Se crea la ventana grafica y la interfaz de usuario para poder observar la toma de la señal, además se configura un boton de *stop* para poder detener la toma de la señal de ser necesario, tambien se configuran los ejes y las leyendas del grafico.
 
 ``` bash
 gcfHandle = figure('Name','EMG en Tiempo Real','NumberTitle','off');
@@ -94,7 +94,7 @@ ylabel('Voltaje (V)');
 title('Señal EMG en Tiempo Real');
 grid on;
 ```
-Se crea un bucle para adquirir los datos de forma infinita hasta ser presionado *stop*, luego los datos se convierten a voltaje para ser graficados en tiempo real, cada muestra de estos datos se almacena en *dataLog* y su tiempo en *timeLog*.
+-Se crea un bucle para adquirir los datos de forma infinita hasta ser presionado *stop*, luego los datos se convierten a voltaje para ser graficados en tiempo real, cada muestra de estos datos se almacena en *dataLog* y su tiempo en *timeLog*.
 
 ``` bash
 userData = get(gcfHandle, 'UserData');
@@ -115,7 +115,7 @@ while ~userData.stopFlag && ishandle(gcfHandle)
     userData = get(gcfHandle, 'UserData'); % Actualizar UserData
 end
 ```
-Por ultimo se guardan los datos en un archivo CSV y se cierra la comunicacion serial y la interfaz gráfica.
+-Por ultimo se guardan los datos en un archivo CSV y se cierra la comunicacion serial y la interfaz gráfica.
 
 ``` bash
 if ~isempty(dataLog)
