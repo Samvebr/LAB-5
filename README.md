@@ -3,14 +3,14 @@
 ### Actividad Simpática y Parasimpática del Sistema Nervioso Autónomo 
 **SNA Simpático** 
 
-Es una parte importante del cuerpo durante situaciones de emergencias, lo que prepara al cuerpo durante las situaciones de emergencia, la llamada respuesta de “lucha o huida”.  El SN simpático activa diversas rutas donde se aumenta la frecuencia cardiaca y respiratoria, se eleva la presión sanguínea, dilatación de pupilas y cambios en el flujo sanguíneo para dirigir todo el volumen al cerebro, corazón y músculos. 
+Es un mecanismo o parte del sistema nervioso que permite a nuestro cuerpo tener una respuesta optima ante una situacion de emrgencia, tambien conocido como la respuesta de “lucha o huida”.  El SN simpático activa diversas rutas donde se aumenta la frecuencia cardiaca y respiratoria, se eleva la presión sanguínea, dilatación de pupilas y cambios en el flujo sanguíneo, esto para dirigir todo el volumen al cerebro, corazón y músculos. 
 
 **SNA Parasimpático**
 
-Ayuda a equilibrar el sistema nervioso simpático y controla la respuesta natural de relajación, después de haber estado en respuesta “lucha o huida”. Equilibra el cuerpo llevando a un estado de relajación mediante la disminución de la frecuencia cardiaca y la presión arterial.
+Ayuda a equilibrar el sistema nervioso simpático y controla la respuesta natural de relajación, después de haber estado en respuesta “lucha o huida”. Equilibra el cuerpo llevandolo a un estado de relajación mediante la disminución de la frecuencia cardiaca y la presión arterial.
 
 ### Efecto de la Actividad Simpática y Parasimpática en la Frecuencia Cardiaca
-El sistema simpático aumenta la fuerza de contracción del corazón, aumenta la presión arterial, aumenta el gasto cardiaco, tensa los músculos y prepara los organismos para la acción inmediata. Por otro lado, el sistema parasimpático disminuye la frecuencia cardiaca, la presión arterial y el gasto cardiaco, calma la respiración favoreciendo la irrigación coronaria. 
+El sistema simpático aumenta la fuerza de contracción del corazón, aumenta la presión arterial, aumenta el gasto cardiaco, tensa los músculos y prepara los organismos para la acción inmediata. Por otro lado, el sistema parasimpático disminuye la frecuencia cardiaca, la presión arterial y el gasto cardiaco, este tambien calma la respiración favoreciendo la irrigación coronaria. 
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/c38e24b5-509b-41c2-b61c-49f682dd9a13" width="80%">
