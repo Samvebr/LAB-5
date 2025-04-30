@@ -19,7 +19,7 @@ El sistema simpático aumenta la fuerza de contracción del corazón, aumenta la
 ### Variabilidad de la Frecuencia Cardiaca (HRV)
 Las variaciones de la frecuencia cardiaca en los intervalos R-R reflejan la actividad del sistema nervioso autónomo y su capacidad de adaptabilidad a estimulos internos y externos. Una HRV elevada indica que la persona es saludable, por otro lado un HRV reducido puede asociarse con estrés, fatiga o enfermedades cardiovasculares.
 
-El HRV se puede analizar en el dominio del tiempo o la frecuencia destacando bandas como la LF (banda de frecuencia baja de la variavilidad de frecuencia cardíaca) (0.04-0.15 Hz) la cual esta asociada con la actividad simpática o parasimpática, y la HF (banda de frecuencia alta) (0.15 - 0.4 Hz) que representa la modulación vagal y la respiración.
+El HRV se puede analizar en el dominio del tiempo o la frecuencia destacando bandas como la LF (banda de frecuencia baja) (0.04-0.15 Hz) la cual esta asociada con la actividad simpática o parasimpática, y la HF (banda de frecuencia alta) (0.15 - 0.4 Hz) que representa la modulación vagal y la respiración.
 ### Transformada Wavelet
 Las Wavelet son señales, o formas de onda, las cuales tienen una duración limitada y un valor promedio de cero, pueden ser irregulares y asimétricas, esta característica les da una mejor comparación y análisis en contraste con la transformada de Fourier. En una señal continua los parámetros de escalamiento y desplazamiento dan paso a la obtención de los coeficientes wavelet. Los coeficientes nos indican cuanta relación hay entre la señal y la Wavelet madre. 
 Algunos usos y tipos de Wavelet utilizados en señales biologicas son:
@@ -27,8 +27,6 @@ Algunos usos y tipos de Wavelet utilizados en señales biologicas son:
 - **Electrocardiogramas (ECG)**: Detecta las ondas QRS y ayuda a la eliminación de ruido muscular y de artefacto. El tipo de wevelet utilizado son los *Daubechies (db)*; poseen buena localizacion en tiempo y frecuencia, *symlets(sym)*; tiene mayor simetria a comparación de los Daubechies y *Mexican Hat(Ricker)*; utiliza la segunda derivada de la gaussiana.
 - **Electroencefalogramas (EEG)**: Con el fin de detectar picos epilépticos y análisis de fases del sueño. Se emplean los *Coiflets(coif)*; que poseen alta simetria y mayor cantidad de momentos nulos, lo que permite la multiresolución y *Morlet*; de manera sinusoidal modula la frecuencia.
 - **Fonocardiogramas(PCG)**: Identificación de ruidos cardiacos anormales y soplos. Los tipos de Wavelet empleados para el analisis de esta señal biológica son *Symlets(sym)*; buena locaclización en tiempo y frecuencia con mayor  simetria y *Biorthigonal*; empleada en reconstruccion y simetria, ayuda en la compresión de imágenes médicas.
-
-###Procedimientos
 
 ### Diagrama de flujo
 - Mediante este se mostrara el plan de acción y su paso a paso con el fin de obtener un experimento con la organización y rigurosidad necesaria.
