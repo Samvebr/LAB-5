@@ -34,7 +34,8 @@ Algunos usos y tipos de Wavelet utilizados en señales biologicas son:
 ![Image](https://github.com/user-attachments/assets/e6d49e42-c604-4486-b6ab-e33da73f28fe)
 
 <div align="center">
-  <img src="(https://github.com/user-attachments/assets/4c7ad6e9-2726-4858-b396-34301ad3450f)
+  <img src="(![Imagen de WhatsApp 2025-04-30 a las 10 31 57_d1f32f3d](https://github.com/user-attachments/assets/23d042cc-25cd-4a9e-945d-65d5114e7192)
+
 " width="80%">
 </div>         
 
