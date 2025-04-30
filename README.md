@@ -220,7 +220,7 @@ def señal_rr(rr_intervals, fs):
     return rr_signal
 ```
 - Generamos una señal basada en los intervalos R-R, tomando los picos en base a su frecuencia.
-- 
+ 
 ``` bash 
 def calcular_hrv(rr_intervals):
     if len(rr_intervals) == 0:
