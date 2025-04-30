@@ -19,7 +19,7 @@ El sistema simpático aumenta la fuerza de contracción del corazón, aumenta la
 ### Variabilidad de la Frecuencia Cardiaca (HRV)
 Las variaciones de la frecuencia cardiaca en los intervalos R-R reflejan la actividad del sistema nervioso autónomo y su capacidad de adaptabilidad a estimulos internos y externos. Una HRV elevada indica que la persona es saludable, por otro lado un HRV reducido puede asociarse con estrés, fatiga o enfermedades cardiovasculares.
 
-El HRV se puede analizar en el dominio del tiempo o la frecuencia destancado bandas como la LF (0.04-0.15 Hz) la cual esta asociada con la actividad simpática o parasimpática, y la HF (0.15 - 0.4 Hz) que representa la modulación vagal y la respiración.
+El HRV se puede analizar en el dominio del tiempo o la frecuencia destacando bandas como la LF (0.04-0.15 Hz) la cual esta asociada con la actividad simpática o parasimpática, y la HF (0.15 - 0.4 Hz) que representa la modulación vagal y la respiración.
 ### Transformada Wavelet
 Las Wavelet son señales, o formas de onda, las cuales tienen una duración limitada y un valor promedio de cero, pueden ser irregulares y asimétricas, esta característica les da una mejor comparación y análisis en contraste con la transformada de Fourier. En una señal continua los parámetros de escalamiento y desplazamiento dan paso a la obtención de los coeficientes wavelet. Los coeficientes nos indican cuanta relación hay entre la señal y la Wavelet madre. 
 Algunos usos y tipos de Wavelet utilizados en señales biologicas son:
