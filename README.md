@@ -32,10 +32,12 @@ Algunos usos y tipos de Wavelet utilizados en señales biologicas son:
 - Mediante este se mostrara el plan de acción y su paso a paso con el fin de obtener un experimento con la organización y rigurosidad necesaria.
   
 ![Image](https://github.com/user-attachments/assets/e6d49e42-c604-4486-b6ab-e33da73f28fe)
+
 <div align="center">
   <img src="![Imagen de WhatsApp 2025-04-30 a las 10 48 02_2b4a097e](https://github.com/user-attachments/assets/4c7ad6e9-2726-4858-b396-34301ad3450f)
 " width="80%">
-</div>                
+</div>         
+
 ![Imagen de WhatsApp 2025-04-30 a las 10 48 02_f2c4e05f](https://github.com/user-attachments/assets/9fb62097-4b40-4bc5-9972-1aa0e6416d3c)
 
 
