@@ -34,7 +34,7 @@ Algunos usos y tipos de Wavelet utilizados en señales biologicas son:
 ![Image](https://github.com/user-attachments/assets/e6d49e42-c604-4486-b6ab-e33da73f28fe)
 
 ### Adquisición de la Señal ECG
-Para la adquisición de la señal se tomo al sujeto de prueba, posteriormente se le colaron los electrodos y mediante comunicacion serial se obtubieron los datos de la frecuencia cardiaca del sujeto en reposo y en actividad durante 5 minutos, que posteriormente son exportados y guardados en un archivo *csv*. Los datos se obtuvieron con Matlab.
+Para la adquisición de la señal se tomo al sujeto de prueba, posteriormente se le colaron los electrodos y mediante comunicacion serial se obtuvieron los datos de la frecuencia cardiaca del sujeto en reposo y en actividad durante 5 minutos, que posteriormente son exportados y guardados en un archivo *csv*. Los datos se obtuvieron con Matlab.
 
 Primero se cerraron los puertos eriales abiertos para evitar conflictos con aperturas posteriores, la instrucción *serialportfind* detecta los puertos abierto y con *delete* se cierran.
 
