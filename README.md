@@ -321,16 +321,33 @@ def aplicar_wavelet(signal, fs, segmento_id):
 #### Espectro 1:
 
 ![Image](https://github.com/user-attachments/assets/18092cf0-5f35-40c2-bff3-ab50bb9d6872)
-
+Analisis: Como se observa en la grafica la mayor parte de la potenica espectral se concentra en la banda que esta por debajo de 0.15 Hz (Lf), principalmente en los instantes iniciales y finales, teniendo en cuenta que en el primer minuto el paciente se encontraba experimentalmente en "estres" podemos relacionarlo con el comportamiento del estres agudo del sistema simpatico cuando se aactiva, lo que tiende a reducir la variabilidad rapida (Hf) y a aumentar las fluctuaciones lentas (Lf) que estan asociadaas a control simpatico y parasimbatico combinados, en relacion con el comportamiento fisiologico un pico de potencia en Lf puede reflejar osiclaciones lentas en la frecuencia cardiaca, este comporatmiento es comun de la modulacion simpatica/alfa relacionada a los reflejos, lo cual en relacion con el estres experimental del primer minuto del paciente es coherente.
 #### Espectro 2:
 
 ![Image](https://github.com/user-attachments/assets/a38f2f63-24db-4537-8205-259a4231551c)
 
+Analisis: Durante el segundo minuto el paciente tendria que estar en relajacion, sin embargo, como se observa en el espectograma sigue habiendo una potencia en Lf, sin embargo no se ve de forma tan intensa, esto puede ser el resultado de relajara al paciente, ya que reaparece parte de la modulacion parasimpatica respiratorio rapida (HF), ligada a la respiracion, ya que el Hf refleja variaciones debidos al nervio vago y la respiracion, se observa en la imagen como su recuperacion indica que el sistema vagal vuelve a modular con mas fuerza la frecuencia cardiaca
 #### Espectro 3:
 
 ![Image](https://github.com/user-attachments/assets/bdd4e09e-18c9-48c4-9790-56959e876d38)
-
+Analisis: En el minuto numero 3 el paciente volvio a realizar un esfuerzo para lograr resultados de "estres" , podemos observar como se refuerza de nuevo la potencia en la banda LF y se atenua la HF, esto debido a que volvimos aplicar la fase de estres, es decir, vuelve la dominancia simpatica, desplazando la energia hacia oscilaciones mas lentas.
 #### Espectro 4:
 
 ![Image](https://github.com/user-attachments/assets/1416cbd3-9ae4-40cc-8153-60cfc960db6b)
+Analisis: En este segmento se puede apreciar una ligera señal en Hf junto a todavia algo de Lf residual, esto se debe a que aunque sea una fase de relajacion, pueden quedar "inercia simpatica" que ralentiza la recuperacion completa de Hf, aunque no se pueda observar detenidamente una buena fase de relajacion, es posible evaluar la rapidez de retorno vagal tras una fase de estrés.
 
+
+**Explicacion de resultados en cuanto a Bandas LF y Hf:**
+Aunque si es cierto que mayormente relacionamos el concepto de "mas lento" con una mayor relajacion y viceversa, en el contexto de HRV en realidad funciona de la siguiente manera
+Bandas Lf/Oscilaciones lentas: El estres activa el sistema simpatico, esto hace que se refuerze estas oscilaciones lentas, lo cual se refleja como un mayor potencial en Lf cuando un cuerpo responde a un reto, es decir, elevacion de preion, frecuencia cardiaca establecida
+
+Bandas Hf / Oscilaciones Rapidas: Como se nombro en el marco teorico esta banda esta relacionada con la modulacion parasimpatica que a su ves esta ligada a la respiracion, por lo que en relajacion prasimaptica fuerte, la potencia Hf aumenta, y las oscilasciones del ritmo respiratorio son muy marcadas.
+
+Conclusiones:
+
+Oscilaciones de LF "lentas" en nuestro resultados reflejan la accion simpatica y la autorregulacion de la presion arterial, mas no un estado de paz, seria correcto decir que el paciente estaba en un estado de bajo estres, sin embargo no de calma, lo cual encaga con las caracteristicas del paciente, ya que al tomar la señal, el sujeto no presentaba las los rasgos o comportamientos de una persona serena o calmada.
+
+Oscilaciones HF "Rapidas" son variaciones respiratorias y vagales, lo que nos indica un esfuerzo del sistema para llegar a un estado de recuperacion y calma
+
+
+  
