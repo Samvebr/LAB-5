@@ -227,7 +227,7 @@ def aplicar_filtro(data, b, a):
 
 
 ### Analísis del HRV
-- El HRV de cada individuo es diferente y este depende a condiciones de edad y de salud, el caso de analísis es sobre Samuel Velandia, joven deportista de 20 años.
+- El HRV de cada individuo es diferente y este depende a condiciones de edad y de salud, el caso de analísis es de un joven deportista de 20 años.
 #### Procesamiento de la señal
 El codigo con el cual se analizara el paciente esta construido de la siguiente forma:
  ``` bash
