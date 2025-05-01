@@ -321,6 +321,7 @@ def aplicar_wavelet(signal, fs, segmento_id):
 #### Espectro 1:
 
 ![Image](https://github.com/user-attachments/assets/18092cf0-5f35-40c2-bff3-ab50bb9d6872)
+
 Analisis: Como se observa en la grafica la mayor parte de la potenica espectral se concentra en la banda que esta por debajo de 0.15 Hz (Lf), principalmente en los instantes iniciales y finales, teniendo en cuenta que en el primer minuto el paciente se encontraba experimentalmente en "estres" podemos relacionarlo con el comportamiento del estres agudo del sistema simpatico cuando se aactiva, lo que tiende a reducir la variabilidad rapida (Hf) y a aumentar las fluctuaciones lentas (Lf) que estan asociadaas a control simpatico y parasimbatico combinados, en relacion con el comportamiento fisiologico un pico de potencia en Lf puede reflejar osiclaciones lentas en la frecuencia cardiaca, este comporatmiento es comun de la modulacion simpatica/alfa relacionada a los reflejos, lo cual en relacion con el estres experimental del primer minuto del paciente es coherente.
 #### Espectro 2:
 
@@ -330,10 +331,12 @@ Analisis: Durante el segundo minuto el paciente tendria que estar en relajacion,
 #### Espectro 3:
 
 ![Image](https://github.com/user-attachments/assets/bdd4e09e-18c9-48c4-9790-56959e876d38)
+
 Analisis: En el minuto numero 3 el paciente volvio a realizar un esfuerzo para lograr resultados de "estres" , podemos observar como se refuerza de nuevo la potencia en la banda LF y se atenua la HF, esto debido a que volvimos aplicar la fase de estres, es decir, vuelve la dominancia simpatica, desplazando la energia hacia oscilaciones mas lentas.
 #### Espectro 4:
 
 ![Image](https://github.com/user-attachments/assets/1416cbd3-9ae4-40cc-8153-60cfc960db6b)
+
 Analisis: En este segmento se puede apreciar una ligera señal en Hf junto a todavia algo de Lf residual, esto se debe a que aunque sea una fase de relajacion, pueden quedar "inercia simpatica" que ralentiza la recuperacion completa de Hf, aunque no se pueda observar detenidamente una buena fase de relajacion, es posible evaluar la rapidez de retorno vagal tras una fase de estrés.
 
 
