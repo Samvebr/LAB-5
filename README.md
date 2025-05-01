@@ -159,7 +159,26 @@ end
 
 ### Diseño e implementación filtro IIR
 
-Un filtro IIR (Infinite Impulse Response) es un filtro digital que funciona en base a los valores presentes de la señal y sus valores pasados, muy utilizados por su alta eficiencia y su uso cuando contamos con recursos limitados (embebidos).
+Un filtro IIR (Infinite Impulse Response) es un filtro digital que funciona en base a los valores presentes de la señal y sus valores pasados, muy utilizados por su alta eficiencia y su uso cuando contamos con recursos limitados (embebidos). Por tanto se diseño un filtro pasa banda de orden 4, con el objetivo de permitir el paso de señales en el rango 0,5 Hz a 40 Hz, eliminando componentes de baja y alta frecuencia.
+Los parametros empleados para el filtro fueron:
+- fs= 200
+- lowcut= 0,5 Hz
+- highcut= 40 Hz
+- orden = 4
+- frecuencia Nyquist = fs/2 = 100
+- Frecuencia normalizada
+    - low = 0,5/100 = 0,005
+    - high = 40/100 = 0,4
+Se eligio este tipo de filtro puesto que tiene una respuesta de magnituf suave y sin ondulaciones en la banda pasante, ademas de poseer una respuesta transitoria estable y es adecuado para preservar la forma de las señales fisiológicas.
+
+La ecuación en diferencias esta expresada por:
+
+![image](https://github.com/user-attachments/assets/cb1c8853-7930-47f1-9a21-37008f335105)
+
+Donde los coeficientes b<sup>k</sup> son los coeficeintes del numerador y a<sup>k</sup> los coeficientes del denomidor.Los coeficientes se encontraron con ayuda del siguiente codigo.
+
+
+
 
 #### Codigo del filtro
 ``` bash
