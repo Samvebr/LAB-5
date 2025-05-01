@@ -392,3 +392,14 @@ Oscilaciones HF "Rapidas" son variaciones respiratorias y vagales, lo que nos in
 
 Para obtener unos resultados en los cuales podamos analizar bien el comportamiento de la variabilidad cardiaca en situaciones de calma o estres, es recomendable tomar dos seañles por separado con el mismo intervalo del tiempo y cada uno con una duracion de almenos 5 minutos, ya que variar de un minuto a otro fases de "calma" y "estrés" da lugar a visualizar estados de "retorno vagal" como en el ultimo resultado de este esperimento.
   
+
+## Bibligrafía
+https://www.kenhub.com/es/library/anatomia-es/sistema-nervioso-parasimpatico 
+
+https://www.medwave.cl/puestadia/cursos/3347.html#:~:text=El%20parasimp%C3%A1tico%20controla%20la%20homeostasis,y%20disminuye%20con%20el%20parasimp%C3%A1tico. 
+
+https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv 
+
+https://la.mathworks.com/help/wavelet/gs/introduction-to-the-wavelet-families.html  
+
+https://my.clevelandclinic.org/health/symptoms/21773-heart-rate-variability-hrv 
