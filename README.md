@@ -351,7 +351,7 @@ Conclusiones:
 
 Oscilaciones de LF "lentas" en nuestro resultados reflejan la accion simpatica y la autorregulacion de la presion arterial, mas no un estado de paz, seria correcto decir que el paciente estaba en un estado de bajo estres, sin embargo no de calma, lo cual encaga con las caracteristicas del paciente, ya que al tomar la señal, el sujeto no presentaba las los rasgos o comportamientos de una persona serena o calmada.
 
-Oscilaciones HF "Rapidas" son variaciones respiratorias y vagales, lo que nos indica un esfuerzo del sistema para llegar a un estado de recuperacion y calma
+Oscilaciones HF "Rapidas" son variaciones respiratorias y vagales, lo que nos indica un esfuerzo del sistema para llegar a un estado de recuperacion y calma.
 
-
+Para obtener unos resultados en los cuales podamos analizar bien el comportamiento de la variabilidad cardiaca en situaciones de calma o estres, es recomendable tomar dos seañles por separado con el mismo intervalo del tiempo y cada uno con una duracion de almenos 5 minutos, ya que variar de un minuto a otro fases de "calma" y "estrés" da lugar a visualizar estados de "retorno vagal" como en el ultimo resultado de este esperimento.
   
