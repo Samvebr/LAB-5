@@ -341,7 +341,8 @@ Analisis: En este segmento se puede apreciar una ligera señal en Hf junto a tod
 
 
 **Explicacion de resultados en cuanto a Bandas LF y Hf:**
-Aunque si es cierto que mayormente relacionamos el concepto de "mas lento" con una mayor relajacion y viceversa, en el contexto de HRV en realidad funciona de la siguiente manera
+Aunque si es cierto que mayormente relacionamos el concepto de "mas lento" con una mayor relajacion y viceversa, en el contexto de HRV en realidad funciona de la siguiente manera:
+
 Bandas Lf/Oscilaciones lentas: El estres activa el sistema simpatico, esto hace que se refuerze estas oscilaciones lentas, lo cual se refleja como un mayor potencial en Lf cuando un cuerpo responde a un reto, es decir, elevacion de preion, frecuencia cardiaca establecida
 
 Bandas Hf / Oscilaciones Rapidas: Como se nombro en el marco teorico esta banda esta relacionada con la modulacion parasimpatica que a su ves esta ligada a la respiracion, por lo que en relajacion prasimaptica fuerte, la potencia Hf aumenta, y las oscilasciones del ritmo respiratorio son muy marcadas.
