@@ -169,13 +169,14 @@ Los parametros empleados para el filtro fueron:
 - Frecuencia normalizada
     - low = 0,5/100 = 0,005
     - high = 40/100 = 0,4
-Se eligio este tipo de filtro puesto que tiene una respuesta de magnituf suave y sin ondulaciones en la banda pasante, ademas de poseer una respuesta transitoria estable y es adecuado para preservar la forma de las señales fisiológicas.
+
+Se eligio este tipo de filtro puesto que tiene una respuesta de magnitud suave y sin ondulaciones en la banda pasante, ademas de poseer una respuesta transitoria estable y es adecuado para preservar la forma de las señales fisiológicas.
 
 La ecuación en diferencias esta expresada por:
 
 ![image](https://github.com/user-attachments/assets/cb1c8853-7930-47f1-9a21-37008f335105)
 
-Donde los coeficientes b<sup>k</sup> son los coeficeintes del numerador y a<sup>k</sup> los coeficientes del denomidor.Los coeficientes se encontraron con ayuda del siguiente codigo.
+Donde los coeficientes $b_k$ son los coeficeintes del numerador y $a_k$ los coeficientes del denomidor.Los coeficientes se encontraron con ayuda del siguiente codigo.
 ``` bash
  b, a = butter(4, [low, high], btype='band')
 ```
