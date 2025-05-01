@@ -176,9 +176,14 @@ La ecuación en diferencias esta expresada por:
 ![image](https://github.com/user-attachments/assets/cb1c8853-7930-47f1-9a21-37008f335105)
 
 Donde los coeficientes b<sup>k</sup> son los coeficeintes del numerador y a<sup>k</sup> los coeficientes del denomidor.Los coeficientes se encontraron con ayuda del siguiente codigo.
+``` bash
+ b, a = butter(4, [low, high], btype='band')
+```
+Diseña el filtro con polos complejos conjugados en el plano *S*, luego aplica la transfromada bilineal para convertir el filtro analogo *H(s)*  a un filtro digital *H(z)* y retorna los coeficientes a y b de la funcion de transferencia en *H(z)*.
 
-
-
+$$
+H(z) = \frac{b_0 + b_1 z^{-1} + \dots + b_M z^{-M}}{a_0 + a_1 z^{-1} + \dots + a_N z^{-N}}
+$$
 
 #### Codigo del filtro
 ``` bash
