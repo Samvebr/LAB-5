@@ -170,7 +170,7 @@ Los parametros empleados para el filtro fueron:
     - low = 0,5/100 = 0,005
     - high = 40/100 = 0,4
 
-Se eligio este tipo de filtro puesto que tiene una respuesta de magnitud suave y sin ondulaciones en la banda pasante, ademas de poseer una respuesta transitoria estable y es adecuado para preservar la forma de las señales fisiológicas.
+Se eligio este tipo de filtro puesto que tiene una respuesta de magnitud suave y sin ondulaciones en la banda pasante y es adecuado para preservar la forma de las señales fisiológicas.
 
 La ecuación en diferencias esta expresada por:
 
