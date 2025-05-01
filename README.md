@@ -185,6 +185,18 @@ $$
 H(z) = \frac{b_0 + b_1 z^{-1} + \dots + b_M z^{-M}}{a_0 + a_1 z^{-1} + \dots + a_N z^{-N}}
 $$
 
+Con los coeficientes obtenidos la ecuacion diferencial quedaria tal que asi:
+
+$$
+\begin{aligned}
+y[n] &=\ 0.0448 \cdot x[n] - 0.1791 \cdot x[n-2] + 0.2686 \cdot x[n-4] \\
+     &\quad - 0.1791 \cdot x[n-6] + 0.0448 \cdot x[n-8] \\
+     &\quad - 4.7666 \cdot y[n-1] + 9.7784 \cdot y[n-2] - 11.6066 \cdot y[n-3] \\
+     &\quad + 9.0377 \cdot y[n-4] - 4.7893 \cdot y[n-5] + 1.6311 \cdot y[n-6] \\
+     &\quad - 0.3161 \cdot y[n-7] + 0.0315 \cdot y[n-8]
+\end{aligned}
+$$
+
 #### Codigo del filtro
 ``` bash
 import numpy as np
